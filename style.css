@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/nitul.jpeg");
+    background-size: cover;
+}
+
+.container {
+    width: 70rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lnk {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    cursor: pointer;
+    font-size: 125px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    transition: 0.6s;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.hi {
+    color: red;
+}
+
+.im {
+    color: white;
+}
+
+.nd {
+    color: white;
+}
+
+.im:hover,
+.nd:hover,
+.hi:hover {
+    transform: translateX(20px);
+}
+.pic {
+    display: flex;
+    justify-content: center;
+}
+/* ---------------------------------------------------- */
+.logo {
+    color: white;
+    text-align: right;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    transform: translateX(-6px);
+}
+
+.name {
+    color: red;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.para {
+    margin-bottom: 20px;
+    color: white;
+    width: 40rem;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.cnct {
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+    margin-left: 80px;
+}
+
+.dnld {
+    font-size: 15px;
+    color: red;
+    border: 0.2px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-left: 40px;
+}
+.dnld:hover {
+    background-color: white;
+}
+/* ---------------------------------------- */
+
+.ttl {
+    color: red;
+    font-size: 30px;
+}
+
+.data {
+    margin-bottom: 20px;
+    color: white;
+    width: 40rem;
+    font-size: 20px;
+    margin-left: 40px;
+}
