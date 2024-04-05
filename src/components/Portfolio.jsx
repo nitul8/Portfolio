@@ -35,15 +35,15 @@ const Portfolio = () => {
     ];
     return (
         <div
-            name="portfolio"
+            name="Portfolio"
             className="bg-gradient-to-b from-black via-black to-gray-700 w-full text-white md:h-screen"
         >
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center h-full w-full">
-                <div className="pb-8 pt-4 md:pt-0">
+                <div className="pb-4 md:pb-8 pt-4 md:pt-0">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-400">
                         Portfolio
                     </p>
-                    <p className="py-6">Check some of the works:</p>
+                    <p className="py-6 text-lg">Check some of the works:</p>
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
                     {portfolios.map(({id, src}) => (

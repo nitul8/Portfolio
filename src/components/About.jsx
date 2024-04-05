@@ -7,12 +7,12 @@ const About = () => {
             className="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-700 to to-black text-white"
         >
             <div className="max-w-screen-lg p-4 mx-auto">
-                <div className="pb-8 pt-4 md:pt-0">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-400">
+                <div className="pb-2 md:pb-4 md:pt-0">
+                    <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-400">
                         About
                     </p>
                 </div>
-                <p className="text-xl mt-4">
+                <p className="text-lg mt-3 md:text-xl md:mt-4">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Sit doloremque expedita placeat nihil, vel sunt alias
                     dignissimos inventore ea sapiente minima voluptatum tempora,

@@ -2,6 +2,7 @@ import React from "react";
 import pic from "../assets/my_pic.jpeg";
 import {FaArrowRight} from "react-icons/fa6";
 import SocialLinks from "./SocialLinks";
+import {Link} from "react-scroll";
 
 const Home = () => {
     return (
@@ -26,12 +27,17 @@ const Home = () => {
                         minus quisquam.
                     </p>
                     <div>
-                        <button className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 md:py-3 flex items-center rounded-md hover:bg-gray-600 cursor-pointer">
+                        <Link
+                            to="Portfolio"
+                            smooth
+                            duration={500}
+                            className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 md:py-3 flex items-center rounded-md cursor-pointer"
+                        >
                             Portfolio
                             <span className="group-hover:rotate-90 duration-300 pl-1">
                                 <FaArrowRight size={20} />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="md:w-2/5">
