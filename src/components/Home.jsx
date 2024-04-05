@@ -26,7 +26,7 @@ const Home = () => {
                         minus quisquam.
                     </p>
                     <div>
-                        <button className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 md:py-3 my-2 flex items-center rounded-md hover:bg-gray-600 cursor-pointer">
+                        <button className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 md:py-3 flex items-center rounded-md hover:bg-gray-600 cursor-pointer">
                             Portfolio
                             <span className="group-hover:rotate-90 duration-300 pl-1">
                                 <FaArrowRight size={20} />
