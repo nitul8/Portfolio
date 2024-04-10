@@ -13,23 +13,24 @@ const About = () => {
                     </p>
                 </div>
                 <p className="text-lg mt-3 md:text-xl md:mt-4">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Sit doloremque expedita placeat nihil, vel sunt alias
-                    dignissimos inventore ea sapiente minima voluptatum tempora,
-                    quam fugiat ratione iste doloribus. Aliquid molestias
-                    maiores dolores distinctio corrupti unde quidem laudantium
-                    beatae, cumque, dicta alias voluptatem dignissimos dolore
-                    autem fugiat cum reiciendis neque saepe.
+                    I have experience working with HTML, CSS, JavaScript (JS),
+                    React, and Tailwind CSS. Throughout my projects, I've
+                    developed various frontend applications including a
+                    portfolio website to showcase my skills and projects, a
+                    weather application to display weather information, and a
+                    Tic-Tac-Toe game implemented using HTML, CSS, and
+                    JavaScript. These projects demonstrate my proficiency in
+                    building user interfaces and web applications using modern
+                    frontend technologies and frameworks.
                 </p>
                 <br />
                 <p className="text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque animi ullam distinctio a suscipit dolorem, quis
-                    eius voluptate sapiente exercitationem aliquam nam culpa.
-                    Minus iste consectetur doloribus ducimus impedit mollitia,
-                    eos enim at laborum sequi dolore earum in ab quaerat harum
-                    magnam perspiciatis odit maxime nihil libero. Omnis, nam
-                    eveniet.
+                    During my career, I've completed one-month internships in
+                    frontend web development at Prodigy Infotech and CodersCave.
+                    These experiences were invaluable for honing my skills in
+                    HTML, CSS, JavaScript, React, and Tailwind CSS, providing me
+                    with practical insights into real-world projects and
+                    enhancing my proficiency in frontend development.
                 </p>
             </div>
         </div>

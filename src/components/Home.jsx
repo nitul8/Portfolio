@@ -19,12 +19,12 @@ const Home = () => {
                         I'm a Frontend Developer
                     </h1>
                     <p className="text-gray-400 py-4 max-w-md">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Consequuntur atque reiciendis doloribus quae quia
-                        ipsam, qui cupiditate ex ut! Vitae ut explicabo
-                        distinctio esse commodi voluptas a laborum, nobis,
-                        soluta doloremque beatae sunt harum hic. Similique,
-                        minus quisquam.
+                        I've worked extensively with HTML, CSS, JavaScript (JS),
+                        React, and Tailwind CSS. My projects include a portfolio
+                        website, a weather application, and a Tic-Tac-Toe game.
+                        These showcase my skills in frontend development,
+                        emphasizing user interface design and web application
+                        creation.
                     </p>
                     <div>
                         <Link
