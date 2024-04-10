@@ -1,27 +1,27 @@
 {
-    "files": {
-        "main.css": "/static/css/main.b9bcd3f4.css",
-        "main.js": "/static/js/main.0ef0d8a2.js",
-        "static/media/Prtflio.png": "/static/media/Prtflio.635de2ace06971fd83dd.png",
-        "static/media/my_pic.jpeg": "/static/media/my_pic.da322d69743ac8e37497.jpeg",
-        "static/media/WeatherApp.png": "/static/media/WeatherApp.06713f8059bab776eea3.png",
-        "static/media/FaceBook.png": "/static/media/FaceBook.d124023891956e60b50f.png",
-        "static/media/Python.png": "/static/media/Python.dea924d737bb84eb9ce3.png",
-        "static/media/TicTacToe.png": "/static/media/TicTacToe.78755c1759ae02ac1023.png",
-        "static/media/ResLand.png": "/static/media/ResLand.3a15c7b9e4f6a637966a.png",
-        "static/media/StopWatch.png": "/static/media/StopWatch.9d9fac740b93a3481a18.png",
-        "static/media/js.png": "/static/media/js.c0e8cccfd25ad5a1d010.png",
-        "static/media/css.png": "./static/media/css.743823ec6b3347e6e52e.png",
-        "static/media/C++_logo.png": "./static/media/C++_logo.053a898d752aef72651e.png",
-        "static/media/React.webp": "./static/media/React.2a0cac33f155e4a27216.webp",
-        "static/media/npm.png": "/static/media/npm.061e65dec1a5ceee089a.png",
-        "static/media/tailwind-css.webp": "/static/media/tailwind-css.6ce08e37a14ea6cd4b63.webp",
-        "index.html": "/index.html",
-        "main.b9bcd3f4.css.map": "/static/css/main.b9bcd3f4.css.map",
-        "main.0ef0d8a2.js.map": "/static/js/main.0ef0d8a2.js.map"
-    },
-    "entrypoints": [
-        "static/css/main.b9bcd3f4.css",
-        "static/js/main.0ef0d8a2.js"
-    ]
+  "files": {
+    "main.css": "/static/css/main.b9bcd3f4.css",
+    "main.js": "/static/js/main.465073d5.js",
+    "static/media/Prtflio.png": "/static/media/Prtflio.635de2ace06971fd83dd.png",
+    "static/media/my_pic.jpeg": "/static/media/my_pic.da322d69743ac8e37497.jpeg",
+    "static/media/WeatherApp.png": "/static/media/WeatherApp.06713f8059bab776eea3.png",
+    "static/media/FaceBook.png": "/static/media/FaceBook.d124023891956e60b50f.png",
+    "static/media/Python.png": "/static/media/Python.dea924d737bb84eb9ce3.png",
+    "static/media/TicTacToe.png": "/static/media/TicTacToe.78755c1759ae02ac1023.png",
+    "static/media/ResLand.png": "/static/media/ResLand.3a15c7b9e4f6a637966a.png",
+    "static/media/StopWatch.png": "/static/media/StopWatch.9d9fac740b93a3481a18.png",
+    "static/media/js.png": "/static/media/js.c0e8cccfd25ad5a1d010.png",
+    "static/media/css.png": "/static/media/css.743823ec6b3347e6e52e.png",
+    "static/media/C++_logo.png": "/static/media/C++_logo.053a898d752aef72651e.png",
+    "static/media/React.webp": "/static/media/React.2a0cac33f155e4a27216.webp",
+    "static/media/npm.png": "/static/media/npm.061e65dec1a5ceee089a.png",
+    "static/media/tailwind-css.webp": "/static/media/tailwind-css.6ce08e37a14ea6cd4b63.webp",
+    "index.html": "/index.html",
+    "main.b9bcd3f4.css.map": "/static/css/main.b9bcd3f4.css.map",
+    "main.465073d5.js.map": "/static/js/main.465073d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9bcd3f4.css",
+    "static/js/main.465073d5.js"
+  ]
 }
