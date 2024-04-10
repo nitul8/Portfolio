@@ -6,9 +6,6 @@
 .pnp.js
 
 # testing
-/coverage
-/public
-/src
 /App.js
 /index.css
 /index.js
