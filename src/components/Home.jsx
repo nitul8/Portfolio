@@ -11,20 +11,17 @@ const Home = () => {
             className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-700"
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
-                <div>
-                    <SocialLinks />
-                </div>
-                <div className="flex flex-col justify-center h-full">
+                <div className="flex flex-col justify-center h-full md:mr-8">
                     <h1 className="text-4xl sm:text-7xl font-bold text-white">
-                        I'm a Frontend Developer
+                        I'm a Developer
                     </h1>
                     <p className="text-gray-400 py-4 max-w-md">
                         I've worked extensively with HTML, CSS, JavaScript (JS),
-                        React, and Tailwind CSS. My projects include a portfolio
-                        website, a weather application, and a Tic-Tac-Toe game.
-                        These showcase my skills in frontend development,
-                        emphasizing user interface design and web application
-                        creation.
+                        React, and Tailwind CSS. My web dev projects include a
+                        portfolio website, a weather application, and a
+                        Tic-Tac-Toe game. Additionally, in my data science
+                        journey I have experience in various machine learning
+                        algorithms.
                     </p>
                     <div>
                         <Link
