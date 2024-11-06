@@ -11,7 +11,9 @@ function NavBar() {
         {id: "3", link: "Portfolio"},
         {id: "4", link: "Experience"},
         {id: "5", link: "Contact"},
-        {id: "6", link: "Language"},
+        {id: "6", link: "Blogs"},
+        {id: "7", link: "Memories"},
+        {id: "8", link: "Language"},
     ];
     return (
         <div className="flex justify-between w-full h-12 text-white bg-black fixed md:h-20">
