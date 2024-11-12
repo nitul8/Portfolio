@@ -71,7 +71,7 @@ function NavBar() {
                                 onClick={() => handleLanguageChange("Bangla")}
                                 className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
                             >
-                                Bangla
+                                বাংলা
                             </li>
                         </ul>
                     )}
@@ -126,7 +126,7 @@ function NavBar() {
                                     }
                                     className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
                                 >
-                                    Bangla
+                                    বাংলা
                                 </li>
                             </ul>
                         )}
