@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import {Link} from "react-scroll";
+import logo from "../assets/logo/nitul_logo.png";
 
 function NavBar() {
     const [nav, setNav] = useState(false);
@@ -17,9 +18,14 @@ function NavBar() {
     ];
     return (
         <div className="flex justify-between w-full h-12 text-white bg-black fixed md:h-20">
-            <span className="font-logo text-3xl mx-4 my-3 md:m-6 md:text-5xl">
-                Nitul Das
+            <span className="font-logo mx-4 my-3 md:my-2 md:mx-4">
+                <img
+                    src={logo}
+                    alt="LOGO"
+                    className="w-8 h-8 md:w-24 md:h-10"
+                />
             </span>
+
             <ul className="hidden md:flex">
                 {links.map(({id, link}) => (
                     <li

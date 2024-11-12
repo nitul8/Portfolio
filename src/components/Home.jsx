@@ -1,47 +1,27 @@
 import React from "react";
 import pic from "../assets/my_pic.jpeg";
-import {FaArrowRight} from "react-icons/fa6";
-import SocialLinks from "./SocialLinks";
-import {Link} from "react-scroll";
 
 const Home = () => {
     return (
         <div
             name="Home"
-            className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-700"
+            className="w-full bg-gradient-to-b from-black to-gray-950"
         >
-            <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
+            <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row py-32">
                 <div className="flex flex-col justify-center h-full md:mr-8">
-                    <h1 className="text-4xl sm:text-7xl font-bold text-white">
-                        I'm a Developer
+                    <h1 className="text-4xl sm:text-6xl font-bold text-white font-serif">
+                        Hi, I'm Nitul Das!
                     </h1>
-                    <p className="text-gray-400 py-4 max-w-md">
-                        I've worked extensively with HTML, CSS, JavaScript (JS),
-                        React, and Tailwind CSS. My web dev projects include a
-                        portfolio website, a weather application, and a
-                        Tic-Tac-Toe game. Additionally, in my data science
-                        journey I have experience in various machine learning
-                        algorithms.
+                    <p className="text-gray-400 text-xl mt-2">
+                        Crafting intelligent solutions with Machine Learning and
+                        Modern Web Technology.
                     </p>
-                    <div>
-                        <Link
-                            to="Portfolio"
-                            smooth
-                            duration={500}
-                            className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 md:py-3 flex items-center rounded-md cursor-pointer"
-                        >
-                            Portfolio
-                            <span className="group-hover:rotate-90 duration-300 pl-1">
-                                <FaArrowRight size={20} />
-                            </span>
-                        </Link>
-                    </div>
                 </div>
-                <div className="md:w-2/5">
+                <div className="md:w-32 md:h-32 m-10">
                     <img
                         src={pic}
-                        alt="pic"
-                        className="rounded-2xl mx-auto w-2/3 md:w-full"
+                        alt="Profile"
+                        className="rounded-full border-4 border-gray-700 shadow-lg object-cover w-full h-full"
                     />
                 </div>
             </div>
