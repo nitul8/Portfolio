@@ -36,7 +36,7 @@ function NavBar() {
                 <img
                     src={logo}
                     alt="LOGO"
-                    className="w-8 h-8 md:w-24 md:h-10"
+                    className="w-18 h-8 md:w-24 md:h-10"
                 />
             </span>
 
