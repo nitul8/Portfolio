@@ -1,12 +1,14 @@
-// NavBar.jsx
 import React, {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
-import {Link} from "react-router-dom"; // Import Link from react-router-dom
+import {Link, useNavigate} from "react-router-dom"; // Import useNavigate
+
 import logo from "../assets/logo/nitul_logo.png";
 
 function NavBar({onNotesClick}) {
     const [nav, setNav] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const navigate = useNavigate(); // Initialize useNavigate
 
     const links = [
         {id: "1", link: "/", name: "Home"},
@@ -18,11 +20,11 @@ function NavBar({onNotesClick}) {
     const handleLanguageChange = (language) => {
         setDropdownOpen(false);
         if (language === "English") {
-            document
-                .getElementById("home")
-                .scrollIntoView({behavior: "smooth"});
-        } else {
-            alert("This feature is yet to be built.");
+            // Navigate to the Home page when "English" is selected
+            navigate("/");
+        } else if (language === "Bangla") {
+            // Navigate to the Bangla page when "Bangla" is selected
+            navigate("/bangla");
         }
     };
 
