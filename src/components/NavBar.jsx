@@ -1,31 +1,27 @@
+// NavBar.jsx
 import React, {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom"; // Import Link from react-router-dom
 import logo from "../assets/logo/nitul_logo.png";
 
-function NavBar() {
+function NavBar({onNotesClick}) {
     const [nav, setNav] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const links = [
-        {id: "1", link: "Home"},
-        {id: "2", link: "About"},
-        {id: "3", link: "Portfolio"},
-        {id: "4", link: "Experience"},
-        {id: "5", link: "Notes"},
-        {id: "6", link: "Contact"},
+        {id: "1", link: "/", name: "Home"},
+        {id: "2", link: "/portfolio", name: "Portfolio"},
+        {id: "3", link: "/notes", name: "Notes"},
+        {id: "4", link: "/contact", name: "Contact"},
     ];
 
     const handleLanguageChange = (language) => {
+        setDropdownOpen(false);
         if (language === "English") {
-            // Close dropdown and scroll to homepage
-            setDropdownOpen(false);
             document
                 .getElementById("home")
                 .scrollIntoView({behavior: "smooth"});
-        } else if (language === "Bangla") {
-            // Show alert and close dropdown
-            setDropdownOpen(false);
+        } else {
             alert("This feature is yet to be built.");
         }
     };
@@ -42,14 +38,22 @@ function NavBar() {
 
             {/* Main Navbar links */}
             <ul className="hidden md:flex items-center">
-                {links.map(({id, link}) => (
+                {links.map(({id, link, name, isNotesLink}) => (
                     <li
                         key={id}
                         className="m-6 cursor-pointer text-gray-500 hover:scale-110 duration-500 text-md"
                     >
-                        <Link to={link} smooth duration={500}>
-                            {link}
-                        </Link>
+                        {isNotesLink ? (
+                            // Handle Notes link separately, trigger onNotesClick
+                            <span onClick={onNotesClick}>{name}</span>
+                        ) : (
+                            <Link
+                                to={link}
+                                className="text-gray-500 hover:scale-110 duration-500"
+                            >
+                                {name}
+                            </Link>
+                        )}
                     </li>
                 ))}
 
@@ -89,19 +93,24 @@ function NavBar() {
             {/* Mobile Menu */}
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500">
-                    {links.map(({id, link}) => (
+                    {links.map(({id, link, name, isNotesLink}) => (
                         <li
                             key={id}
                             className="m-6 cursor-pointer hover:scale-110 duration-500 text-xl"
+                            onClick={() => {
+                                if (isNotesLink) {
+                                    onNotesClick();
+                                }
+                                setNav(false);
+                            }}
                         >
-                            <Link
-                                onClick={() => setNav(!nav)}
-                                to={link}
-                                smooth
-                                duration={500}
-                            >
-                                {link}
-                            </Link>
+                            {isNotesLink ? (
+                                <span>{name}</span>
+                            ) : (
+                                <Link to={link} smooth duration={500}>
+                                    {name}
+                                </Link>
+                            )}
                         </li>
                     ))}
                     {/* Mobile Language Dropdown */}

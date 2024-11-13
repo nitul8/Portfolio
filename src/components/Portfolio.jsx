@@ -11,7 +11,7 @@ const Portfolio = () => {
         {
             id: 1,
             src: ResLand,
-            //demoLink : 'https://nitul8.github.io/PRODIGY_WD_03/',
+            demoLink: "#",
             codeLink: "https://github.com/nitul8/PRODIGY_WD_01",
         },
         {
@@ -35,55 +35,60 @@ const Portfolio = () => {
         {
             id: 5,
             src: WeatherApp,
-            //demoLink : 'https://nitul8.github.io/PRODIGY_WD_03/',
+            demoLink: "#",
             codeLink: "https://github.com/nitul8/PRODIGY_WD_05",
         },
         {
             id: 6,
             src: FaceBook,
-            //demoLink : 'https://nitul8.github.io/PRODIGY_WD_03/',
+            demoLink: "#",
             codeLink: "https://github.com/nitul8/FaceBook_Clone",
         },
     ];
+
     return (
         <div
             name="Portfolio"
-            className="bg-gradient-to-b from-gray-900 to-gray-800 w-full text-white "
+            className="w-full bg-gradient-to-b from-gray-900 to-gray-800 text-white"
         >
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center h-full w-full">
+            <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center px-4 py-32">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-400">
+                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400">
                         Portfolio
                     </p>
-                    <p className="py-6 text-lg">Check some of the works:</p>
+                    <p className="py-6 text-lg text-gray-300">
+                        Check out some of my projects:
+                    </p>
                 </div>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-20 sm:px-0">
                     {portfolios.map(({id, src, demoLink, codeLink}) => (
                         <div
                             key={id}
-                            className="shadow-md shadow-gray-600 rounded-lg"
+                            className="shadow-md shadow-gray-600 rounded-lg overflow-hidden"
                         >
                             <img
                                 src={src}
-                                alt="Responsive Landing Page"
-                                className="rounded-lg duration-200 hover:scale-105"
+                                alt={`Portfolio ${id}`}
+                                className="rounded-lg duration-200 hover:scale-105 object-cover w-full h-64"
                             />
-                            <div className="flex justify-center items-center">
-                                <a
-                                    href={demoLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-1/2 px-4 py-2 m-4 duration-200 hover:scale-105 text-center"
-                                >
-                                    <button className="w-full">Demo</button>
-                                </a>
+                            <div className="flex justify-center items-center p-4">
+                                {demoLink && (
+                                    <a
+                                        href={demoLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-1/2 px-4 py-2 m-4 bg-blue-500 text-white rounded-lg text-center hover:bg-blue-600 duration-200"
+                                    >
+                                        Demo
+                                    </a>
+                                )}
                                 <a
                                     href={codeLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-1/2 px-4 py-2 m-4 duration-200 hover:scale-105 text-center"
+                                    className="w-1/2 px-4 py-2 m-4 bg-gray-500 text-white rounded-lg text-center hover:bg-gray-600 duration-200"
                                 >
-                                    <button className="w-full">Code</button>
+                                    Code
                                 </a>
                             </div>
                         </div>
