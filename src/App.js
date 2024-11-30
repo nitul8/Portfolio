@@ -1,7 +1,8 @@
-// App.jsx
 import React from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {Analytics} from "@vercel/analytics/react"; // Import Vercel Analytics
 
+// Import components
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
@@ -13,8 +14,11 @@ import Bangla from "./components/Bangla";
 function App() {
     return (
         <Router>
+            {/* Navigation Bar */}
             <NavBar />
-            <div className="w-full h-screen">
+
+            {/* Main Content Area */}
+            <main className="w-full h-screen">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />
@@ -22,8 +26,13 @@ function App() {
                     <Route path="/notes" element={<Notes />} />
                     <Route path="/bangla" element={<Bangla />} />
                 </Routes>
-            </div>
+            </main>
+
+            {/* Social Links */}
             <SocialLinks />
+
+            {/* Vercel Analytics */}
+            <Analytics />
         </Router>
     );
 }
