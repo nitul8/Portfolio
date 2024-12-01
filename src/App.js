@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Notes from "./components/Notes";
 import Bangla from "./components/Bangla";
+import ThemeColor from "./components/ThemeColor";
 
 function App() {
     return (
@@ -30,6 +31,8 @@ function App() {
 
             {/* Social Links */}
             <SocialLinks />
+
+            <ThemeColor />
 
             {/* Vercel Analytics */}
             <Analytics />

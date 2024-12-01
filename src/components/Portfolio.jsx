@@ -165,14 +165,14 @@ const Portfolio = () => {
     return (
         <div
             name="Portfolio"
-            className="w-full bg-gradient-to-b from-black to-gray-800 text-white"
+            className="w-full font-body bg-white dark:bg-black text-[#4b5563] dark:text-[#9ca3af]"
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center px-4 py-32">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0 text-center">
-                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400">
+                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-serif text-black dark:text-white">
                         Portfolio
                     </p>
-                    <p className="py-6 text-lg text-gray-300">
+                    <p className="py-6 text-lg">
                         Check out some of my projects:
                     </p>
                 </div>
@@ -189,23 +189,23 @@ const Portfolio = () => {
                         }) => (
                             <div
                                 key={id}
-                                className="shadow-md shadow-gray-600 rounded-lg p-6 bg-gray-900"
+                                className="shadow-md shadow-gray-600 rounded-lg p-6 bg-gray-100 dark:bg-gray-900"
                             >
                                 <div className="flex items-start">
                                     <div className="flex-grow">
-                                        <p className="text-lg font-semibold mb-2">
+                                        <p className="text-lg font-semibold mb-2 font-heading text-black dark:text-white">
                                             {title}
                                         </p>
-                                        <div className="text-sm text-gray-300 space-y-1">
+                                        <div className="text-sm space-y-1">
                                             {abt.map((feature, index) => (
                                                 <div key={index}>{feature}</div>
                                             ))}
                                         </div>
                                         <div className="mt-4">
-                                            <p className="font-semibold">
+                                            <p className="font-semibold font-heading text-black dark:text-white">
                                                 Technologies:
                                             </p>
-                                            <ul className="text-sm text-gray-300 space-y-1">
+                                            <ul className="text-sm space-y-1">
                                                 {technologies.map(
                                                     (tech, index) => (
                                                         <li key={index}>

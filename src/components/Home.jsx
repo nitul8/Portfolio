@@ -79,15 +79,15 @@ const logo = [
 
 const Home = () => {
     return (
-        <div className="bg-gradient-to-b from-black to-gray-800">
+        <div className="font-body bg-white dark:bg-black">
             {/* Home Section */}
             <div name="Home" className="w-full">
                 <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row py-32">
                     <div className="flex flex-col justify-center h-full md:mr-8">
-                        <h1 className="text-4xl sm:text-6xl font-bold text-white font-serif">
+                        <h1 className="text-4xl sm:text-6xl font-bold text-[#000000] dark:text-white font-heading">
                             Hi, I'm Nitul Das!
                         </h1>
-                        <p className="text-gray-400 text-xl mt-2">
+                        <p className="text-[#4b5563] dark:text-[#9ca3af] text-xl mt-2">
                             Crafting intelligent solutions with Machine Learning
                             and Modern Web Technology.
                         </p>
@@ -96,7 +96,7 @@ const Home = () => {
                         <img
                             src={pic}
                             alt="Profile"
-                            className="rounded-full border-4 border-gray-700 shadow-lg object-cover w-full h-full"
+                            className="rounded-full border-4 border-[#d1d5db] dark:border-[#374151] shadow-lg object-cover w-full h-full"
                         />
                     </div>
                 </div>
@@ -105,15 +105,15 @@ const Home = () => {
             {/* About Section */}
             <div
                 name="About"
-                className="w-full flex flex-col justify-center items-center text-white"
+                className="w-full flex flex-col justify-center items-center text-[#f9fafb] dark:text-[#f9fafb]"
             >
                 <div className="max-w-screen-lg p-4 mx-auto">
                     <div className="pb-2 md:pb-4 md:pt-0">
-                        <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-400">
+                        <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#d1d5db] dark:border-[#374151] font-heading text-black dark:text-white">
                             About
                         </p>
                     </div>
-                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-gray-400">
+                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-[#4b5563] dark:text-[#9ca3af]">
                         I have experience working with HTML, CSS, JavaScript
                         (JS), React, and Tailwind CSS. Throughout my projects,
                         I've developed various frontend applications including a
@@ -125,7 +125,7 @@ const Home = () => {
                         modern frontend technologies and frameworks.
                     </p>
                     <br />
-                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-gray-400">
+                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-[#4b5563] dark:text-[#9ca3af]">
                         During my career, I've completed one-month internships
                         in frontend web development at Prodigy Infotech and
                         CodersCave. These experiences were invaluable for honing
@@ -138,10 +138,10 @@ const Home = () => {
             </div>
 
             {/* Experience Section */}
-            <div name="Experience" className=" w-full">
-                <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+            <div name="Experience" className="w-full">
+                <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-[#f9fafb] dark:text-[#f9fafb]">
                     <div className="pb-4 md:pb-8 pt-4 md:pt-0">
-                        <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-400">
+                        <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#d1d5db] dark:border-[#374151] font-heading text-black dark:text-white">
                             Experience
                         </p>
                         <p className="text-lg mt-3 md:text-xl md:mt-4">
@@ -156,7 +156,7 @@ const Home = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={
-                                    "shadow-md flex flex-col justify-center items-center hover:scale-105 duration-500 py-2 rounded-lg " +
+                                    "shadow-md flex flex-col justify-center items-center hover:scale-105 duration-500 py-2 " +
                                     style
                                 }
                             >
@@ -168,49 +168,6 @@ const Home = () => {
                                 <p className="mt-4">{nam}</p>
                             </a>
                         ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* Contact Section */}
-            <div name="Contact" className="w-full h-screen text-white p-4">
-                <div className="flex flex-col justify-center p-4 max-w-screen-lg mx-auto h-full">
-                    <div className="pb-4 md:pb-8 pt-4 md:pt-0">
-                        <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-400">
-                            Contact
-                        </p>
-                        <p className="text-lg mt-3 md:text-xl md:mt-4">
-                            Submit the form to get in contact with me.
-                        </p>
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <form
-                            action="https://getform.io/f/zbxdyolb"
-                            method="POST"
-                            className="flex flex-col w-full md:w-1/2"
-                        >
-                            <input
-                                type="text"
-                                name="Name"
-                                placeholder="Enter your name"
-                                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-                            />
-                            <input
-                                type="text"
-                                name="Email"
-                                placeholder="Enter your email"
-                                className="my-2 md:my-3 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-                            />
-                            <textarea
-                                name="Comment"
-                                rows="10"
-                                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-                                placeholder="Enter your comment"
-                            ></textarea>
-                            <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 w-fit px-4 py-2 md:px-6 mx-auto md:py-3 mt-3 md:mt-5 flex items-center rounded-md cursor-pointer">
-                                Let's Talk
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>

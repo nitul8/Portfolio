@@ -29,7 +29,7 @@ function NavBar({onNotesClick}) {
     };
 
     return (
-        <div className="flex justify-between w-full h-12 text-white bg-black fixed md:h-20">
+        <div className="flex justify-between w-full h-12 text-black dark:text-white bg-white dark:bg-black fixed md:h-20">
             <span className="font-logo mx-4 my-3 md:my-2 md:mx-4">
                 <img
                     src={logo}
