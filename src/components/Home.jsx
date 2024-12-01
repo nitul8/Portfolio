@@ -7,7 +7,6 @@ import react from "../assets/logo/React.webp";
 import tailwind from "../assets/logo/tailwind-css.webp";
 import python from "../assets/logo/Python.png";
 import cpp from "../assets/logo/C++_logo.png";
-import github from "../assets/logo/github.png";
 import nPm from "../assets/logo/npm.png";
 
 // Logos array
@@ -72,7 +71,7 @@ const logo = [
 
 const Home = () => {
     return (
-        <div className="font-body bg-white dark:bg-black">
+        <div className="w-full font-body bg-white dark:bg-black text-[#4b5563] dark:text-[#9ca3af]">
             {/* Home Section */}
             <div name="Home" className="w-full">
                 <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row py-32">
@@ -80,7 +79,7 @@ const Home = () => {
                         <h1 className="text-4xl sm:text-6xl font-bold text-[#000000] dark:text-white font-heading">
                             Hi, I'm Nitul Das!
                         </h1>
-                        <p className="text-[#4b5563] dark:text-[#9ca3af] text-xl mt-2">
+                        <p className=" text-xl mt-2">
                             Crafting intelligent solutions with Machine Learning
                             and Modern Web Technology.
                         </p>
@@ -98,7 +97,7 @@ const Home = () => {
             {/* About Section */}
             <div
                 name="About"
-                className="w-full flex flex-col justify-center items-center text-[#f9fafb] dark:text-[#f9fafb]"
+                className="w-full flex flex-col justify-center items-center"
             >
                 <div className="max-w-screen-lg p-4 mx-auto">
                     <div className="pb-2 md:pb-4 md:pt-0">
@@ -106,7 +105,7 @@ const Home = () => {
                             About
                         </p>
                     </div>
-                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-[#4b5563] dark:text-[#9ca3af]">
+                    <p className="text-lg mt-2 md:text-lg md:mt-2">
                         I have experience working with HTML, CSS, JavaScript
                         (JS), React, and Tailwind CSS. Throughout my projects,
                         I've developed various frontend applications including a
@@ -118,7 +117,7 @@ const Home = () => {
                         modern frontend technologies and frameworks.
                     </p>
                     <br />
-                    <p className="text-lg mt-2 md:text-lg md:mt-2 text-[#4b5563] dark:text-[#9ca3af]">
+                    <p className="text-lg mt-2 md:text-lg md:mt-2">
                         During my career, I've completed one-month internships
                         in frontend web development at Prodigy Infotech and
                         CodersCave. These experiences were invaluable for honing
@@ -132,12 +131,12 @@ const Home = () => {
 
             {/* Experience Section */}
             <div name="Experience" className="w-full">
-                <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-[#f9fafb] dark:text-[#f9fafb]">
+                <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className="pb-4 md:pb-8 pt-4 md:pt-0">
                         <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#d1d5db] dark:border-[#374151] font-heading text-black dark:text-white">
                             Experience
                         </p>
-                        <p className="text-lg mt-3 md:text-xl md:mt-4">
+                        <p className="text-lg mt-3 md:text-xl md:mt-4 ">
                             These are the technologies I've worked with:
                         </p>
                     </div>
