@@ -63,13 +63,6 @@ const logo = [
     },
     {
         id: 8,
-        img: github,
-        nam: "GitHub",
-        style: "shadow-white",
-        url: "https://github.com/nitul8",
-    },
-    {
-        id: 9,
         img: nPm,
         nam: "NPM",
         style: "shadow-red-500",
