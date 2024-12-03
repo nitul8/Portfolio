@@ -14,8 +14,10 @@ module.exports = {
             },
             fontFamily: {
                 logo: ["Zeyada"],
-                heading: ["Cursive"], // Heading font
+                heading: ["'Sour Gummy'", "serif"],
                 body: ["serif", "sans-serif"],
+                bnbody: ["'Noto Serif Bengali'", "serif"],
+                bnheading: ["'Tiro Bangla'", "serif"],
             },
         },
     },

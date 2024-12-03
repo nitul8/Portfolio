@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.noto-serif-bengali-neel {
+    font-family: "Noto Serif Bengali", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.sour-gummy-neel {
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.tiro-bangla-regular {
+    font-family: "Tiro Bangla", serif;
+    font-weight: 400;
+    font-style: normal;
+}
