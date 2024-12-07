@@ -13,6 +13,7 @@ function NavBar({onNotesClick}) {
     const links = [
         {id: "1", link: "/", name: "Home"},
         {id: "2", link: "/portfolio", name: "Portfolio"},
+        {id: "3", link: "/", name: "Achievements"},
         {id: "3", link: "/notes", name: "Notes"},
         {id: "4", link: "/contact", name: "Contact"},
     ];

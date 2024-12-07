@@ -11,6 +11,7 @@ import SocialLinks from "./components/SocialLinks";
 import Notes from "./components/Notes";
 import Bangla from "./components/Bangla";
 import ThemeColor from "./components/ThemeColor";
+import Achievements from "./components/Achievements";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/achievement" element={<Achievements />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/notes" element={<Notes />} />
                     <Route path="/bangla" element={<Bangla />} />

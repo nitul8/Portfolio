@@ -176,7 +176,7 @@ const Portfolio = () => {
                         Check out some of my projects:
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-10 sm:px-0">
+                <div className="px-10 sm:px-0 space-y-8">
                     {portfolios.map(
                         ({
                             id,
@@ -193,19 +193,27 @@ const Portfolio = () => {
                             >
                                 <div className="flex items-start">
                                     <div className="flex-grow">
-                                        <p className="text-lg font-semibold mb-2 font-heading text-black dark:text-white">
+                                        <p className="text-2xl font-semibold mb-2 font-heading text-black dark:text-white">
                                             {title}
                                         </p>
-                                        <div className="text-sm space-y-1">
+                                        <div className="flex justify-center">
+                                            <img
+                                                src={src}
+                                                alt={`Portfolio ${id}`}
+                                                className="w-2/3 object-cover duration-200 hover:scale-105 pb-8"
+                                            />
+                                        </div>
+
+                                        <div className=" text-sm md:text-lg space-y-1">
                                             {abt.map((feature, index) => (
                                                 <div key={index}>{feature}</div>
                                             ))}
                                         </div>
-                                        <div className="mt-4">
-                                            <p className="font-semibold font-heading text-black dark:text-white">
+                                        <div className="my-4">
+                                            <p className="font-semibold font-heading text-black dark:text-white text-xl">
                                                 Technologies:
                                             </p>
-                                            <ul className="text-sm space-y-1">
+                                            <ul className="text-sm md:text-lg space-y-1">
                                                 {technologies.map(
                                                     (tech, index) => (
                                                         <li key={index}>
@@ -216,11 +224,6 @@ const Portfolio = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <img
-                                        src={src}
-                                        alt={`Portfolio ${id}`}
-                                        className="rounded-full w-32 h-32 object-cover duration-200 hover:scale-105 ml-4"
-                                    />
                                 </div>
                                 <div className="flex justify-center mt-4 space-x-4">
                                     {demoLink && (
