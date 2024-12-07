@@ -94,7 +94,7 @@ function NavBar({onNotesClick}) {
 
             {/* Mobile Menu */}
             {nav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500">
+                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white font-body dark:bg-black dark:text-white">
                     {links.map(({id, link, name, isNotesLink}) => (
                         <li
                             key={id}
@@ -122,7 +122,7 @@ function NavBar({onNotesClick}) {
                     >
                         Language
                         {dropdownOpen && (
-                            <ul className="absolute top-full left-1/2 transform -translate-x-1/2 bg-gray-800 text-white w-32 mt-2 rounded shadow-lg">
+                            <ul className="absolute top-full left-1/2 transform -translate-x-1/2 w-32 mt-2 rounded shadow-lg">
                                 <li
                                     onClick={() =>
                                         handleLanguageChange("English")
