@@ -1,13 +1,14 @@
 import React from "react";
 
 import LibraryDayQuiz from "../assets/photo/library-day-quiz.jpeg";
+import CkbQuiz from "../assets/photo/ckb-quiz.jpeg";
 
 const Achievements = () => {
     const achievements = [
         {
             id: 1,
             date: "12 August, 2024",
-            vanue: "Jorhat Engineering College",
+            vanue: "Jorhat Engineering College, Jorhat",
             abt: [
                 <p key="description">
                     Secured <strong>1st position</strong> in the Jorhat District
@@ -24,6 +25,27 @@ const Achievements = () => {
                 </p>,
             ],
             src: LibraryDayQuiz,
+        },
+        {
+            id: 2,
+            date: "4 October, 2024",
+            vanue: "CKB Commerce College, Jorhat",
+            abt: [
+                <p key="description">
+                    Secured <strong>6th position</strong> in the All Assam
+                    Inter-Institutional Quiz Competition, held on the occasion
+                    of <strong>Diamond Jubilee</strong> of CKB Commerce College,
+                    Jorhat organized by{" "}
+                    <strong>CKB Commerce College,Jorhat</strong> on 4th October,
+                    2024, at MCC Auditorium, CKB Commerce College, Jorhat.
+                    Teamed up with <strong>Maharnab Kashyap</strong> for the
+                    event.
+                </p>,
+                <p key="qm">
+                    <strong>Quiz Master:</strong> Dipankar Kaushik
+                </p>,
+            ],
+            src: CkbQuiz,
         },
     ];
 
