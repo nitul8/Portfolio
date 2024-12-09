@@ -1,5 +1,8 @@
 import React from "react";
 
+import {Prism as SyntaxHighlighter} from "react-syntax-highlighter";
+import {oneDark} from "react-syntax-highlighter/dist/esm/styles/prism";
+
 const CProgramming = () => {
     return (
         <div
@@ -35,13 +38,17 @@ const CProgramming = () => {
                         program looks like this:
                     </p>
                     <pre className="bg-gray-700 dark:bg-gray-300 p-4 rounded mt-4 text-white dark:text-black">
-                        <code>
+                        <SyntaxHighlighter
+                            language="c"
+                            style={oneDark}
+                            className="rounded mt-4 text-sm"
+                        >
                             {`#include <stdio.h>
 int main() {
     printf("Hello, World!");
     return 0;
 }`}
-                        </code>
+                        </SyntaxHighlighter>
                     </pre>
                 </section>
 
@@ -80,13 +87,17 @@ int main() {
                         loops to control the flow of the program.
                     </p>
                     <pre className="bg-gray-700 dark:bg-gray-300 p-4 rounded mt-4 text-white dark:text-black">
-                        <code>
+                        <SyntaxHighlighter
+                            language="c"
+                            style={oneDark}
+                            className="rounded mt-4 text-sm"
+                        >
                             {`if (condition) {
     // Code to execute if condition is true
 } else {
     // Code to execute if condition is false
 }`}
-                        </code>
+                        </SyntaxHighlighter>
                     </pre>
                 </section>
 
@@ -100,11 +111,15 @@ int main() {
                         is:
                     </p>
                     <pre className="bg-gray-700 dark:bg-gray-300 p-4 rounded mt-4 text-white dark:text-black">
-                        <code>
+                        <SyntaxHighlighter
+                            language="c"
+                            style={oneDark}
+                            className="rounded mt-4 text-sm"
+                        >
                             {`return_type function_name(parameters) {
     // Function body
 }`}
-                        </code>
+                        </SyntaxHighlighter>
                     </pre>
                 </section>
             </div>

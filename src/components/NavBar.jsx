@@ -62,7 +62,7 @@ function NavBar({onNotesClick}) {
                 {/* Notes Dropdown */}
                 <li className="relative m-6 text-gray-500 text-md">
                     <Menu as="div" className="relative inline-block text-left">
-                        <MenuButton className="inline-flex justify-center rounded-md bg-white px-3 py-2 w-sm hover:bg-gray-50">
+                        <MenuButton className="inline-flex justify-center rounded-md px-3 py-2 w-sm hover:scale-110 duration-500">
                             Notes
                         </MenuButton>
                         <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
@@ -93,7 +93,7 @@ function NavBar({onNotesClick}) {
                 {/* Language Dropdown */}
                 <li className="relative m-6 text-gray-500 text-md">
                     <Menu as="div" className="relative inline-block text-left">
-                        <MenuButton className="inline-flex justify-center rounded-md bg-white px-3 py-2  hover:bg-gray-50">
+                        <MenuButton className="inline-flex justify-center rounded-md px-3 py-2  hover:scale-110 duration-500">
                             Language
                         </MenuButton>
                         <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
