@@ -14,7 +14,8 @@ import Achievements from "./components/Achievements";
 
 //Import Notes
 import CProgramming from "./components/Notes/CProgramming";
-import ReactJS from "./components/Notes/ReactJS";
+import ReactJS from "./components/Notes/ReactJS/ReactJS";
+import Week1 from "./components/Notes/ReactJS/Week1";
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
                         element={<CProgramming />}
                     />
                     <Route path="/notes/react-js" element={<ReactJS />} />
+                    <Route path="/notes/react-js/week1" element={<Week1 />} />
                     <Route path="/bangla" element={<Bangla />} />
                 </Routes>
             </main>
