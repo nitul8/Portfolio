@@ -1,6 +1,6 @@
 import React from "react";
 
-const Notes = () => {
+const CProgramming = () => {
     return (
         <div
             name="Notes"
@@ -112,4 +112,4 @@ int main() {
     );
 };
 
-export default Notes;
+export default CProgramming;

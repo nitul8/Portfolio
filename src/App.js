@@ -8,10 +8,13 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
-import Notes from "./components/Notes";
 import Bangla from "./components/Bangla";
 import ThemeColor from "./components/ThemeColor";
 import Achievements from "./components/Achievements";
+
+//Import Notes
+import CProgramming from "./components/Notes/CProgramming";
+import ReactJS from "./components/Notes/ReactJS";
 
 function App() {
     return (
@@ -26,7 +29,11 @@ function App() {
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/achievement" element={<Achievements />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/notes" element={<Notes />} />
+                    <Route
+                        path="/notes/c-programming"
+                        element={<CProgramming />}
+                    />
+                    <Route path="/notes/react-js" element={<ReactJS />} />
                     <Route path="/bangla" element={<Bangla />} />
                 </Routes>
             </main>
