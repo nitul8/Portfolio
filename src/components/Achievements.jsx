@@ -36,10 +36,10 @@ const Achievements = () => {
                     Inter-Institutional Quiz Competition, held on the occasion
                     of <strong>Diamond Jubilee</strong> of CKB Commerce College,
                     Jorhat organized by{" "}
-                    <strong>CKB Commerce College,Jorhat</strong> on 4th October,
-                    2024, at MCC Auditorium, CKB Commerce College, Jorhat.
-                    Teamed up with <strong>Maharnab Kashyap</strong> for the
-                    event.
+                    <strong>CKB Commerce College, Jorhat</strong> on 4th
+                    October, 2024, at MCC Auditorium, CKB Commerce College,
+                    Jorhat. Teamed up with <strong>Maharnab Kashyap</strong> for
+                    the event.
                 </p>,
                 <p key="qm">
                     <strong>Quiz Master:</strong> Dipankar Kaushik
@@ -63,11 +63,11 @@ const Achievements = () => {
                         Check out some of my achievements:
                     </p>
                 </div>
-                <div className="px-10 sm:px-0 space-y-8">
+                <div className="px-4 sm:px-0 space-y-8">
                     {achievements.map(({id, date, abt, vanue, src}) => (
                         <div
                             key={id}
-                            className="shadow-md shadow-gray-600 rounded-lg p-6 bg-gray-100 dark:bg-gray-900 grid grid-cols-2"
+                            className="shadow-md shadow-gray-600 rounded-lg p-6 bg-gray-100 dark:bg-gray-900 grid grid-cols-1 sm:grid-cols-2 gap-4"
                         >
                             <div className="flex items-start">
                                 <div className="flex-grow">
@@ -84,11 +84,11 @@ const Achievements = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center sm:justify-end">
                                 <img
                                     src={src}
                                     alt={`Portfolio ${id}`}
-                                    className="w-2/3 object-cover duration-200 hover:scale-105 ml-4 "
+                                    className="w-full sm:w-3/4 lg:w-2/3 object-cover duration-200 hover:scale-105 rounded-lg"
                                 />
                             </div>
                         </div>

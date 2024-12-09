@@ -7,7 +7,7 @@ const Notes = () => {
             className="w-full font-body bg-white dark:bg-black text-[#4b5563] dark:text-[#9ca3af] pt-28"
         >
             <div className="max-w-screen-lg mx-auto px-4 flex flex-col justify-center items-center">
-                <h1 className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 mb-6 font-serif text-black dark:text-white">
+                <h1 className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 mb-6 font-heading text-black dark:text-white">
                     C Programming Notes
                 </h1>
 

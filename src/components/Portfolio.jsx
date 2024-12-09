@@ -104,8 +104,8 @@ const Portfolio = () => {
                 </p>,
             ],
             src: Prtflio,
-            demoLink: "https://nitul8.github.io/PRODIGY_WD_04/",
-            codeLink: "https://github.com/nitul8/PRODIGY_WD_04",
+            demoLink: "https://nitul-das.vercel.app/",
+            codeLink: "https://github.com/nitul8/Portfolio",
         },
         {
             id: 4,
@@ -169,7 +169,7 @@ const Portfolio = () => {
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center px-4 py-32">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0 text-center">
-                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-serif text-black dark:text-white">
+                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-heading text-black dark:text-white">
                         Portfolio
                     </p>
                     <p className="py-6 text-lg">

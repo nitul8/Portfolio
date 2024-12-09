@@ -8,7 +8,7 @@ const Contact = () => {
         >
             <div className="flex flex-col justify-center p-4 max-w-screen-lg mx-auto h-full">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0 text-center">
-                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-serif text-black dark:text-white">
+                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-heading text-black dark:text-white">
                         Contact
                     </p>
                     <p className="text-lg mt-3 md:text-xl md:mt-4">
