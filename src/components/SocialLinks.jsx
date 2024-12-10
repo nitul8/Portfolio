@@ -35,7 +35,7 @@ const SocialLinks = () => {
         },
         {
             id: 4,
-            link: "/Web_dev_Resume.pdf",
+            link: "/resume.pdf",
             icon: (
                 <>
                     Resume <MdMan4 size={30} />
