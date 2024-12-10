@@ -249,6 +249,132 @@ export default Greeting;`}
                         </ul>
                     </p>
                 </section>
+
+                {/* Props */}
+                <section className="mb-8 w-full">
+                    <h2 className="text-2xl font-semibold mb-4 font-heading text-black dark:text-white">
+                        Props
+                    </h2>
+                    <p className="text-lg">
+                        React is a component based library, which divides the UI
+                        into little reusable pieces. In some cases those
+                        components need to communicate and the way to pass data
+                        between components is by <strong>using props</strong>.{" "}
+                        <strong>Props</strong> is a special keyword in React
+                        stands for <strong>Properties</strong> and is being used
+                        for data transfer from on component to another. But the
+                        important part here is that the data with props are
+                        being passed through in a{" "}
+                        <strong>uni-directional flow</strong>.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>Example 1:</strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React, {Component} from "react";
+
+class Example1 extends Component {
+    constructor(props) {
+        super(props);
+        this.props = props;
+    }
+    render() {
+        return (
+            <div>
+                <h1>Hello {this.props.name}, Let's learn together.</h1>
+            </div>
+        );
+    }
+}
+export default Example1;`}
+                    </SyntaxHighlighter>
+                    <p className="text-lg">
+                        In Example 1, we've used a class component to utilise
+                        props. The <Code>App.js</Code> file serves as the
+                        parent, while other components act as its children. When
+                        working with class components, we define a constructor
+                        to initialise the component and access{" "}
+                        <Code>props</Code>, enabling dynamic and reusable code
+                        structures. This approach showcases the power of React's
+                        component-based architecture, making it easy to manage
+                        and pass data efficiently between components.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>Example 2:</strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React from "react";
+
+const Example2 = (props) => {
+    return (
+        <div>
+            <h1>Hello {props.name}, Let's learn together.</h1>
+        </div>
+    );
+};
+
+export default Example2;`}
+                    </SyntaxHighlighter>
+                    <p className="text-lg">
+                        In Example 2, we’ve used a function component to utilise
+                        props. Similar to Example 1, the <Code>App.js</Code>{" "}
+                        file acts as the parent, while other components function
+                        as its children. With function components, props can be
+                        directly accessed as an argument in the function call,
+                        making the code simpler and more concise.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>App.js file:</strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React from "react";
+
+//import Components
+import Example1 from "./Props/Example1";
+import Example2 from "./Props/Example2";
+
+const App = () => {
+    return (
+        <>
+            <Example1 name="Neel" />
+            <Example2 name="Arti" />
+        </>
+    );
+};
+
+export default App;`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>Output:</strong>
+                    </div>
+                    <p className="text-black text-sm bg-gray-200">
+                        <h1>
+                            <strong> Hello Neel, Let's learn together.</strong>
+                        </h1>
+                        <h1>
+                            <strong> Hello Arti, Let's learn together.</strong>
+                        </h1>
+                    </p>
+                    <br />
+                </section>
+
+                {/* Link to notion.so */}
                 <p className="text-lg">
                     To get these notes on notion.so{" "}
                     <a
