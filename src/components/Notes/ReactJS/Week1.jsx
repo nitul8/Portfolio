@@ -3,7 +3,7 @@ import Code from "../Code";
 import {Prism as SyntaxHighlighter} from "react-syntax-highlighter";
 import {oneDark} from "react-syntax-highlighter/dist/esm/styles/prism";
 
-import pic from "/Users/nitul/Documents/My-Projects/CodersCave/portfolio/src/assets/photo/components.png";
+import pic from "./components.png";
 
 const Week1 = () => {
     return (
