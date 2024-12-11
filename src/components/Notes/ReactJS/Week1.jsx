@@ -374,6 +374,120 @@ export default App;`}
                     <br />
                 </section>
 
+                {/* State */}
+                <section className="mb-8 w-full">
+                    <h2 className="text-2xl font-semibold mb-4 font-heading text-black dark:text-white">
+                        State
+                    </h2>
+                    <p className="text-lg">
+                        <strong>State</strong> is a built-in object of the React
+                        components. The state object is used to store all the
+                        data that belongs to the component only. The state is
+                        only accessible inside the component it belongs to.
+                        State is mutable, it can be changed as per the need.
+                        Whenever the state object changes the object is
+                        re-rendered. To use state inside class components
+                        <Code>this.state</Code> is used. And to use state
+                        component inside the functional component{" "}
+                        <Code>useState</Code> hook is used.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            Example - 3 (Using state in class components):
+                        </strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React, {Component} from "react";
+
+class Example3 extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {count: 0};
+    }
+    render() {
+        return (
+            <div>
+                <div>Count = {this.state.count}</div>
+                <button
+                    onClick={() => this.setState({count: this.state.count + 1})}
+                >
+                    Increase
+                </button>
+                <button
+                    onClick={() => this.setState({count: this.state.count - 1})}
+                >
+                    Decrease
+                </button>
+            </div>
+        );
+    }
+}
+export default Example3;`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            Example - 4 (Using state in functional components):
+                        </strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React, {useState} from "react";
+
+const Example4 = () => {
+    const [count, setCount] = useState(0); //We will discuss about this more in hook
+    return (
+        <div>
+            <div>Count = {count}</div>
+            <button onClick={() => setCount(count + 1)}>Increase</button>
+            <button onClick={() => setCount(count - 1)}>Decrease</button>
+        </div>
+    );
+};
+
+export default Example4;`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <br />
+                    <div className="text-lg">
+                        <strong>App.js file:</strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`import React from "react";
+
+//import components
+import Example3 from "./States/Example3";
+import Example4 from "./States/Example4";
+
+const App = () => {
+    return (
+        <>
+            <Example3 />
+            <Example4 />
+        </>
+    );
+};
+
+export default App;`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <br />
+                </section>
+
                 {/* Link to notion.so */}
                 <p className="text-lg">
                     To get these notes on notion.so{" "}
