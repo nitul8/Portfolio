@@ -6,7 +6,7 @@ import {Analytics} from "@vercel/analytics/react"; // Import Vercel Analytics
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
 import Bangla from "./components/Bangla";
 import ThemeColor from "./components/ThemeColor";
@@ -27,7 +27,7 @@ function App() {
             <main className="w-full h-screen">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/projects" element={<Projects />} />
                     <Route path="/achievement" element={<Achievements />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route

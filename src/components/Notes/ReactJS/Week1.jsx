@@ -628,6 +628,132 @@ useEffect(() => {
                     <br />
                 </section>
 
+                {/* Event Handelling */}
+                <section className="mb-8 w-full">
+                    <h2 className="text-2xl font-semibold mb-4 font-heading text-black dark:text-white">
+                        Event Handelling
+                    </h2>
+                    <p className="text-lg">
+                        <strong>Event handling</strong> in React refers to how
+                        we manage and respond to user interactions like clicks,
+                        form submissions, and keyboard events. React events are
+                        named using camelCase (e.g., onClick, onChange) and are
+                        passed as props to elements. These events are similar to
+                        handling events in regular JavaScript but with some
+                        React-specific syntax.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            Example of Event Handling in Class Component:
+                        </strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`class Button extends React.Component {
+    handleClick = () => {
+        console.log('Button clicked!');
+    }
+
+    render() {
+        return (
+            <button onClick={this.handleClick}>
+                Click me
+            </button>
+        );
+    }
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            Example of Event Handling in Functional Component:
+                        </strong>
+                    </div>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`const Button = () => {
+    const handleClick = () => {
+        console.log('Button clicked!');
+    }
+
+    return (
+        <button onClick={handleClick}>
+            Click me
+        </button>
+    );
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            <Code>bind</Code> & <Code>this</Code>:
+                        </strong>
+                    </div>
+                    <p className="text-lg">
+                        In React class components, the <Code>this</Code> keyword
+                        can lose its context when used in event handlers. To
+                        maintain the correct context, we need to bind event
+                        handlers to the component instance. There are several
+                        ways to achieve this:
+                    </p>
+                    <ul className="text-lg list-disc list-inside space-y-2">
+                        <li>
+                            Binding in the constructor:{" "}
+                            <Code>
+                                {
+                                    "this.handleClick = this.handleClick.bind(this);"
+                                }
+                            </Code>
+                        </li>
+                        <li>
+                            Using arrow functions:{" "}
+                            <Code>{"handleClick = () => {}"}</Code>
+                        </li>
+                        <li>
+                            Binding inline in render:{" "}
+                            <Code>{"onClick={() => this.handleClick()}"}</Code>
+                        </li>
+                    </ul>
+                    <br />
+                    <br />
+                </section>
+
+                {/* Event Handelling */}
+                <section className="mb-8 w-full">
+                    <h2 className="text-2xl font-semibold mb-4 text-center font-heading text-black dark:text-white">
+                        Excercise
+                    </h2>
+                    <p className="text-lg">
+                        <strong>Q1.</strong> Create a simple To-Do List App to
+                        practice state management.
+                    </p>
+                    <p className="text-lg">
+                        <strong>Q2.</strong> Create a simple Tic Tac Toe Game to
+                        practice event handelling.
+                    </p>
+                    <p className="text-lg">
+                        For reference{" "}
+                        <a
+                            href="/projects"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline text-blue-500 hover:text-blue-700"
+                        >
+                            click here
+                        </a>
+                        .
+                    </p>
+                    <br />
+                    <br />
+                </section>
+
                 {/* Link to notion.so */}
                 <p className="text-lg">
                     To get these notes on notion.so{" "}

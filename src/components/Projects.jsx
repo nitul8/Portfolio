@@ -7,11 +7,12 @@ import TicTacToe from "../assets/video/TicTacToe.png";
 import WeatherApp from "../assets/video/WeatherApp.png";
 import FaceBook from "../assets/video/FaceBook.png";
 
-const Portfolio = () => {
-    const portfolios = [
+const Projects = () => {
+    const projects = [
         {
             id: 1,
             title: "Stopwatch",
+            nam: "stopwatch",
             abt: [
                 "The Stopwatch project implements a simple, interactive stopwatch web application.",
                 <strong key="features">Features:</strong>,
@@ -52,6 +53,7 @@ const Portfolio = () => {
         {
             id: 2,
             title: "Tic Tac Toe",
+            nam: "tic-tac-toe",
             abt: [
                 "Classic Tic Tac Toe game built with a simple and clean UI.",
                 <strong key="features">Features:</strong>,
@@ -87,6 +89,7 @@ const Portfolio = () => {
         {
             id: 3,
             title: "Portfolio",
+            nam: "stopwatch",
             abt: [
                 "Personal portfolio showcasing skills, projects, and experience.",
                 <strong key="features">Features:</strong>,
@@ -110,6 +113,7 @@ const Portfolio = () => {
         {
             id: 4,
             title: "Weather App",
+            nam: "weatherapp",
             abt: [
                 "Displays real-time weather data for various cities.",
                 <strong key="features">Features:</strong>,
@@ -137,6 +141,7 @@ const Portfolio = () => {
         {
             id: 5,
             title: "Facebook Clone",
+            nam: "fbclone",
             abt: [
                 "Clone of Facebook’s main page with basic social features.",
                 <strong key="features">Features:</strong>,
@@ -164,20 +169,20 @@ const Portfolio = () => {
 
     return (
         <div
-            name="Portfolio"
+            name="Projects"
             className="w-full font-body bg-white dark:bg-black text-[#4b5563] dark:text-[#9ca3af]"
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center px-4 py-32">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0 text-center">
                     <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 font-heading text-black dark:text-white">
-                        Portfolio
+                        Projects
                     </p>
                     <p className="py-6 text-lg">
                         Check out some of my projects:
                     </p>
                 </div>
                 <div className="px-10 sm:px-0 space-y-8">
-                    {portfolios.map(
+                    {projects.map(
                         ({
                             id,
                             title,
@@ -260,4 +265,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Projects;
