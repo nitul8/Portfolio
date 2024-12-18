@@ -488,6 +488,146 @@ export default App;`}
                     <br />
                 </section>
 
+                {/* Lifecycle Methods */}
+                <section className="mb-8 w-full">
+                    <h2 className="text-2xl font-semibold mb-4 font-heading text-black dark:text-white">
+                        Lifecycle Methods
+                    </h2>
+                    <p className="text-lg">
+                        In React, <strong>lifecycle methods</strong> are special
+                        methods in class components that get called at specific
+                        points during a component's life. These methods allow
+                        developers to execute code at particular stages of the
+                        component's rendering and updating process.
+                    </p>
+                    <br />
+                    <div className="text-lg">
+                        <strong>Types of lifecycle methods -</strong>
+                    </div>
+                    <div className="text-lg">
+                        <strong>
+                            1. <Code>componentDidMount()</Code>:
+                        </strong>
+                    </div>
+                    <p className="text-lg">
+                        This lifecycle method is called after a component has
+                        been mounted to the DOM (rendered for the first time).
+                        It's commonly used for initial setup like API calls,
+                        subscriptions, or DOM manipulations that need to happen
+                        after the component is rendered. It only runs once
+                        during the component's lifecycle.
+                    </p>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`** structure of componentDidMount **
+componentDidMount() {
+    // Perform initial setup, API calls, etc.
+    this.setState({ isLoaded: true });
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            2. <Code>constructor()</Code>:
+                        </strong>
+                    </div>
+                    <p className="text-lg">
+                        The constructor is called before the component is
+                        mounted to the DOM. It's the perfect place to initialize
+                        state and bind methods. The <Code>super()</Code> call is
+                        required as it calls the parent class's constructor and
+                        sets up the component properly.
+                    </p>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`** structure of constructor **
+constructor(){
+	super();
+	this.state = (count:0);//example line
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            3. <Code>render()</Code>:
+                        </strong>
+                    </div>
+                    <p className="text-lg">
+                        The <Code>render()</Code> method is a required lifecycle
+                        method in class components. It's responsible for
+                        returning the JSX (or React elements) that should be
+                        displayed on the screen. This method is called every
+                        time a component's state or props change.
+                    </p>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`** structure of render **
+render(){
+	<>
+		<div>Hello</div>
+	</>
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <div className="text-lg">
+                        <strong>
+                            4. <Code>componentDidUpdate()</Code>:
+                        </strong>
+                    </div>
+                    <p className="text-lg">
+                        This method is called after a component updates (when
+                        props or state changes). It's useful for performing side
+                        effects like API calls or DOM manipulations after the
+                        component has been updated. It receives the previous
+                        props and state as arguments, allowing you to compare
+                        them with current values.
+                    </p>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`** structure of componentDidUpdate **
+componentDidUpdate(prevProps, prevState) {
+    if (prevState.count !== this.state.count) {
+        // Perform some action
+    }
+}`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <p className="text-lg">
+                        Lifecycle methods are used in class components. However
+                        we can achieve this in functional components using
+                        hooks. Way to achieve —
+                    </p>
+                    <SyntaxHighlighter
+                        language="jsx"
+                        style={oneDark}
+                        className="rounded mt-4 text-sm"
+                    >
+                        {`//Moiunting
+useEffect(() => {
+     console.log("Fucnctionational component mounting");
+});
+
+//Updating
+useEffect(() => {
+     console.log("Fucnctionational component updating .. ");
+},[number]);`}
+                    </SyntaxHighlighter>
+                    <br />
+                    <br />
+                </section>
+
                 {/* Link to notion.so */}
                 <p className="text-lg">
                     To get these notes on notion.so{" "}
