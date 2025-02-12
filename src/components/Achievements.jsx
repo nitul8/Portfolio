@@ -56,9 +56,6 @@ const Achievements = () => {
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center px-4 py-32">
                 <div className="pb-4 md:pb-8 pt-4 md:pt-0 text-center">
-                    <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-400 text-black dark:text-white font-heading">
-                        Achievements
-                    </p>
                     <p className="py-6 text-lg">
                         Check out some of my achievements:
                     </p>
