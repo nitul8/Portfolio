@@ -1,73 +1,8 @@
 import React from "react";
 import pic from "../assets/my_pic.jpeg";
-import html from "../assets/logo/HTML.png";
-import css from "../assets/logo/css.png";
-import js from "../assets/logo/js.png";
-import react from "../assets/logo/React.webp";
-import tailwind from "../assets/logo/tailwind-css.webp";
-import python from "../assets/logo/Python.png";
-import cpp from "../assets/logo/C++_logo.png";
-import nPm from "../assets/logo/npm.png";
-
-// Logos array
-const logo = [
-    {
-        id: 1,
-        img: html,
-        nam: "HTML",
-        style: "shadow-orange-500",
-        url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    },
-    {
-        id: 2,
-        img: css,
-        nam: "CSS",
-        style: "shadow-indigo-400",
-        url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    },
-    {
-        id: 3,
-        img: js,
-        nam: "JavaScript",
-        style: "shadow-yellow-600",
-        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-        id: 4,
-        img: react,
-        nam: "React JS",
-        style: "shadow-blue-600",
-        url: "https://reactjs.org/",
-    },
-    {
-        id: 5,
-        img: tailwind,
-        nam: "Tailwind CSS",
-        style: "shadow-blue-400",
-        url: "https://tailwindcss.com/",
-    },
-    {
-        id: 6,
-        img: python,
-        nam: "Python",
-        style: "shadow-yellow-400",
-        url: "https://www.python.org/",
-    },
-    {
-        id: 7,
-        img: cpp,
-        nam: "C/C++",
-        style: "shadow-indigo-600",
-        url: "https://isocpp.org/",
-    },
-    {
-        id: 8,
-        img: nPm,
-        nam: "NPM",
-        style: "shadow-red-500",
-        url: "https://www.npmjs.com/",
-    },
-];
+import flogo from "../constants/frontend";
+import blogo from "../constants/backend";
+import dlogo from "../constants/dsa";
 
 const Home = () => {
     return (
@@ -79,7 +14,7 @@ const Home = () => {
                         <h1 className="text-4xl sm:text-6xl font-bold text-[#000000] dark:text-white font-heading">
                             Hi, I'm Nitul Das!
                         </h1>
-                        <p className=" text-xl mt-2">
+                        <p className="text-xl mt-2">
                             Crafting intelligent solutions with Machine Learning
                             and Modern Web Technology.
                         </p>
@@ -134,32 +69,80 @@ const Home = () => {
                 <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className="pb-4 md:pb-8 pt-4 md:pt-0">
                         <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#d1d5db] dark:border-[#374151] font-heading text-black dark:text-white">
-                            Experience
+                            Technology
                         </p>
-                        <p className="text-lg mt-3 md:text-xl md:mt-4 ">
+                        <p className="text-lg mt-3 md:text-xl md:mt-4">
                             These are the technologies I've worked with:
                         </p>
                     </div>
-                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-                        {logo.map(({id, img, nam, style, url}) => (
-                            <a
-                                key={id}
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={
-                                    "shadow-md flex flex-col justify-center items-center hover:scale-105 duration-500 py-2 " +
-                                    style
-                                }
-                            >
-                                <img
-                                    src={img}
-                                    alt={nam}
-                                    className="w-8 mx-auto md:w-20"
-                                />
-                                <p className="mt-4">{nam}</p>
-                            </a>
-                        ))}
+                    <div>
+                        <p className="text-2xl text-[#000000] dark:text-white underline">
+                            Frontend Technology:
+                        </p>
+                        <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
+                            {flogo.map(({id, img, nam, style, url}) => (
+                                <a
+                                    key={id}
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
+                                >
+                                    <img
+                                        src={img}
+                                        alt={nam}
+                                        className="w-8 my-auto md:w-8"
+                                    />
+                                    <p className="mt-2 text-center">{nam}</p>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-2xl text-[#000000] dark:text-white underline">
+                            Backend Technology:
+                        </p>
+                        <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-12 px-8 sm:px-0">
+                            {blogo.map(({id, img, nam, style, url}) => (
+                                <a
+                                    key={id}
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
+                                >
+                                    <img
+                                        src={img}
+                                        alt={nam}
+                                        className="w-8 my-auto md:w-8"
+                                    />
+                                    <p className="mr-2 text-center">{nam}</p>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-2xl text-[#000000] dark:text-white underline">
+                            Data Structure and Algorithm:
+                        </p>
+                        <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
+                            {dlogo.map(({id, img, nam, style, url}) => (
+                                <a
+                                    key={id}
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
+                                >
+                                    <img
+                                        src={img}
+                                        alt={nam}
+                                        className="w-8 my-auto md:w-8"
+                                    />
+                                    <p className="mt-2 text-center">{nam}</p>
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
