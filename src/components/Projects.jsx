@@ -30,6 +30,14 @@ const projects = [
                 icon: <FaJs className="inline mr-1 text-yellow-400" />,
                 name: "JavaScript",
             },
+            {
+                icon: <FaHtml5 className="inline mr-1 text-red-400" />,
+                name: "HTML5",
+            },
+            {
+                icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
+                name: "CSS3",
+            },
         ],
         image: Prtflio,
         demoLink: "https://nituldas.vercel.app/",
@@ -43,11 +51,11 @@ const projects = [
         technologies: [
             {
                 icon: <FaHtml5 className="inline mr-1 text-red-400" />,
-                name: "HTML",
+                name: "HTML5",
             },
             {
                 icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
-                name: "CSS",
+                name: "CSS3",
             },
             {
                 icon: <FaJs className="inline mr-1 text-yellow-400" />,
@@ -91,11 +99,11 @@ const projects = [
         technologies: [
             {
                 icon: <FaHtml5 className="inline mr-1 text-red-400" />,
-                name: "HTML",
+                name: "HTML5",
             },
             {
                 icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
-                name: "CSS",
+                name: "CSS3",
             },
             {
                 icon: <FaJs className="inline mr-1 text-yellow-400" />,
@@ -118,7 +126,7 @@ const projects = [
             },
             {
                 icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
-                name: "CSS",
+                name: "CSS3",
             },
             {
                 icon: <FaJs className="inline mr-1 text-yellow-400" />,
@@ -171,7 +179,7 @@ const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex gap-8 justify-center">
+                                <div className="flex gap-8 justify-center bottom-0">
                                     {demoLink && (
                                         <a
                                             href={demoLink}
