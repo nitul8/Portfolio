@@ -7,7 +7,6 @@ import logo from "../assets/logo/nitul_logo.png";
 
 function NavBar({onNotesClick}) {
     const [nav, setNav] = useState(false);
-    const [isNotesOpen, setIsNotesOpen] = useState(false); // Track Notes dropdown state
     const [isLanguageOpen, setIsLanguageOpen] = useState(false); // Track Language dropdown state
 
     const navigate = useNavigate(); // Initialize useNavigate
@@ -20,28 +19,17 @@ function NavBar({onNotesClick}) {
         }
     };
 
-    const handleNotesSelection = (topic) => {
-        if (topic === "C Programming") {
-            navigate("/notes/c-programming");
-        } else if (topic === "React JS") {
-            navigate("/notes/react-js");
-        }
-    };
-
     const links = [
         {id: "1", link: "/", name: "Home"},
         {id: "2", link: "/projects", name: "Projects"},
         {id: "3", link: "/achievement", name: "Achievements"},
-        {id: "4", link: "/contact", name: "Contact"},
+        {id: "4", link: "/notes", name: "Notes"},
+        {id: "5", link: "/contact", name: "Contact"},
     ];
     // Initial state set to false
-    const [isToggledNotes, setIsToggledNotes] = useState(false);
     const [isToggledLanguage, setIsToggledLanguage] = useState(false);
 
     // Function to toggle between true and false
-    const handleNotes = () => {
-        setIsToggledNotes(!isToggledNotes);
-    };
     const handleLanguage = () => {
         setIsToggledLanguage(!isToggledLanguage);
     };
@@ -71,44 +59,6 @@ function NavBar({onNotesClick}) {
                         </Link>
                     </li>
                 ))}
-
-                {/* Notes Dropdown */}
-                <li className="relative m-6 text-gray-500 text-md">
-                    <Menu as="div" className="relative inline-block text-left">
-                        <MenuButton
-                            className="inline-flex justify-center rounded-md px-3 py-2 w-sm hover:scale-110 duration-500"
-                            onClick={() => setIsNotesOpen(!isNotesOpen)} // Toggle Notes dropdown
-                        >
-                            Notes
-                        </MenuButton>
-                        {isNotesOpen && (
-                            <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
-                                <MenuItem>
-                                    <button
-                                        onClick={() =>
-                                            handleNotesSelection(
-                                                "C Programming"
-                                            )
-                                        }
-                                        className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
-                                    >
-                                        C Programming
-                                    </button>
-                                </MenuItem>
-                                <MenuItem>
-                                    <button
-                                        onClick={() =>
-                                            handleNotesSelection("React JS")
-                                        }
-                                        className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
-                                    >
-                                        React JS
-                                    </button>
-                                </MenuItem>
-                            </MenuItems>
-                        )}
-                    </Menu>
-                </li>
 
                 {/* Language Dropdown */}
                 <li className="relative m-6 text-gray-500 text-md">
@@ -167,38 +117,6 @@ function NavBar({onNotesClick}) {
                             <Link to={link}>{name}</Link>
                         </li>
                     ))}
-
-                    {/* Mobile Notes Dropdown */}
-                    <li
-                        onClick={handleNotes}
-                        className="relative m-6 cursor-pointer hover:scale-110 duration-500 text-xl text-center"
-                    >
-                        Notes
-                        <ul
-                            className={`mt-2 bg-gray-300 text-white rounded shadow-lg ${
-                                isToggledNotes ? "block" : "hidden"
-                            }`}
-                        >
-                            <li
-                                onClick={() => {
-                                    handleNotesSelection("C Programming");
-                                    setNav(false); // Close the menu when a note is selected
-                                }}
-                                className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
-                            >
-                                C Programming
-                            </li>
-                            <li
-                                onClick={() => {
-                                    handleNotesSelection("React JS");
-                                    setNav(false); // Close the menu when a note is selected
-                                }}
-                                className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
-                            >
-                                React JS
-                            </li>
-                        </ul>
-                    </li>
 
                     {/* Mobile Language Dropdown */}
                     <li

@@ -15,7 +15,7 @@ import Achievements from "./components/Achievements";
 // Import Notes
 import CProgramming from "./components/Notes/CProgramming";
 import ReactJS from "./components/Notes/ReactJS/ReactJS";
-import Week1 from "./components/Notes/ReactJS/Week1";
+import Notes from "./components/Notes";
 
 function App() {
     return (
@@ -26,6 +26,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/achievement" element={<Achievements />} />
+                    <Route path="/notes/*" element={<Notes />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/bangla" element={<Bangla />} />
 
@@ -34,9 +35,7 @@ function App() {
                         path="/notes/c-programming"
                         element={<CProgramming />}
                     />
-                    <Route path="/notes/react-js" element={<ReactJS />}>
-                        <Route path="week1" element={<Week1 />} />
-                    </Route>
+                    <Route path="/notes/react-js" element={<ReactJS />} />
                 </Routes>
             </main>
             <SocialLinks />

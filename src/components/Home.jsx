@@ -41,25 +41,35 @@ const Home = () => {
                         </p>
                     </div>
                     <p className="text-lg mt-2 md:text-lg md:mt-2">
-                        I have experience working with HTML, CSS, JavaScript
-                        (JS), React, and Tailwind CSS. Throughout my projects,
-                        I've developed various frontend applications including a
-                        portfolio website to showcase my skills and projects, a
-                        weather application to display weather information, and
-                        a Tic-Tac-Toe game implemented using HTML, CSS, and
-                        JavaScript. These projects demonstrate my proficiency in
-                        building user interfaces and web applications using
-                        modern frontend technologies and frameworks.
+                        I am a <strong>full-stack developer</strong> with
+                        expertise in{" "}
+                        <strong>
+                            HTML, CSS, JavaScript, React, Tailwind CSS, Node.js,
+                            Express, and MongoDB
+                        </strong>
+                        . I have developed various web applications, including a
+                        <strong>portfolio website</strong>, a{" "}
+                        <strong>weather application</strong>, and a{" "}
+                        <strong>Tic-Tac-Toe game</strong>, showcasing my ability
+                        to build dynamic and interactive user interfaces.
                     </p>
-                    <br />
                     <p className="text-lg mt-2 md:text-lg md:mt-2">
-                        During my career, I've completed one-month internships
-                        in frontend web development at Prodigy Infotech and
-                        CodersCave. These experiences were invaluable for honing
-                        my skills in HTML, CSS, JavaScript, React, and Tailwind
-                        CSS, providing me with practical insights into
-                        real-world projects and enhancing my proficiency in
-                        frontend development.
+                        Beyond frontend development, I have expanded into{" "}
+                        <strong>backend technologies</strong>, working with{" "}
+                        <strong>Node.js, Express, and MongoDB</strong> to create
+                        scalable and efficient web applications. My backend
+                        knowledge allows me to develop{" "}
+                        <strong>
+                            RESTful APIs, handle databases, and build full-stack
+                            applications
+                        </strong>{" "}
+                        seamlessly.
+                    </p>
+                    <p className="text-lg mt-2 md:text-lg md:mt-2">
+                        I am passionate about building{" "}
+                        <strong>end-to-end web solutions</strong>, continuously
+                        learning new technologies, and refining my skills in{" "}
+                        <strong>full-stack development</strong>.
                     </p>
                 </div>
             </div>
