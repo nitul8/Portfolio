@@ -8,7 +8,6 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
-import Bangla from "./components/Bangla";
 import ThemeColor from "./components/ThemeColor";
 import Achievements from "./components/Achievements";
 
@@ -28,7 +27,6 @@ function App() {
                     <Route path="/achievement" element={<Achievements />} />
                     <Route path="/notes/*" element={<Notes />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/bangla" element={<Bangla />} />
 
                     {/* Notes Section */}
                     <Route

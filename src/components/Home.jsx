@@ -90,7 +90,7 @@ const Home = () => {
                             Frontend Technology:
                         </p>
                         <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
-                            {flogo.map(({id, img, nam, style, url}) => (
+                            {flogo.map(({id, img, icon, nam, style, url}) => (
                                 <a
                                     key={id}
                                     href={url}
@@ -98,11 +98,9 @@ const Home = () => {
                                     rel="noopener noreferrer"
                                     className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
                                 >
-                                    <img
-                                        src={img}
-                                        alt={nam}
-                                        className="w-8 my-auto md:w-8"
-                                    />
+                                    <p className="text-3xl text-center">
+                                        {icon}
+                                    </p>
                                     <p className="mt-2 text-center">{nam}</p>
                                 </a>
                             ))}
@@ -113,7 +111,7 @@ const Home = () => {
                             Backend Technology:
                         </p>
                         <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-12 px-8 sm:px-0">
-                            {blogo.map(({id, img, nam, style, url}) => (
+                            {blogo.map(({id, icon, nam, style, url}) => (
                                 <a
                                     key={id}
                                     href={url}
@@ -121,12 +119,10 @@ const Home = () => {
                                     rel="noopener noreferrer"
                                     className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
                                 >
-                                    <img
-                                        src={img}
-                                        alt={nam}
-                                        className="w-8 my-auto md:w-8"
-                                    />
-                                    <p className="mr-2 text-center">{nam}</p>
+                                    <p className="text-3xl text-center">
+                                        {icon}
+                                    </p>
+                                    <p className="mt-2 text-center">{nam}</p>
                                 </a>
                             ))}
                         </div>
@@ -136,7 +132,7 @@ const Home = () => {
                             Data Structure and Algorithm:
                         </p>
                         <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
-                            {dlogo.map(({id, img, nam, style, url}) => (
+                            {dlogo.map(({id, icon, nam, style, url}) => (
                                 <a
                                     key={id}
                                     href={url}
@@ -144,11 +140,9 @@ const Home = () => {
                                     rel="noopener noreferrer"
                                     className={`shadow-md flex flex-row justify-center items-center hover:scale-105 duration-500 px-2 py-4 ${style}`}
                                 >
-                                    <img
-                                        src={img}
-                                        alt={nam}
-                                        className="w-8 my-auto md:w-8"
-                                    />
+                                    <p className="text-3xl text-center">
+                                        {icon}
+                                    </p>
                                     <p className="mt-2 text-center">{nam}</p>
                                 </a>
                             ))}
