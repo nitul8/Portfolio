@@ -1,11 +1,13 @@
 import {useState} from "react";
 import CProgramming from "./Notes/CProgramming";
 import ReactJS from "./Notes/ReactJS/ReactJS";
+import JavaScript from "./Notes/JavaScript";
 
 const Notes = () => {
     const [notes] = useState([
         {id: 1, title: "React.js", component: <ReactJS />},
-        {id: 2, title: "C Programming", component: <CProgramming />},
+        {id: 2, title: "JavaScript", component: <JavaScript />},
+        {id: 3, title: "C Programming", component: <CProgramming />},
     ]);
     const [selectedNote, setSelectedNote] = useState(notes[0]); // Default to first note
 
