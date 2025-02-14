@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import {Link} from "react-router-dom";
-
 import logo from "../assets/logo/nitul_logo.png";
 
 function NavBar({onNotesClick}) {
@@ -16,8 +15,9 @@ function NavBar({onNotesClick}) {
     ];
 
     return (
-        <div className="flex justify-between w-full h-12 text-black dark:text-white bg-white dark:bg-black fixed md:h-20">
-            <Link to="/" className="font-logo mx-4 my-3 md:my-2 md:mx-4">
+        <div className="flex justify-between items-center w-full h-12 md:h-20 fixed bg-white dark:bg-black text-black dark:text-white px-4 md:px-8">
+            {/* Logo */}
+            <Link to="/" className="font-logo">
                 <img
                     src={logo}
                     alt="LOGO"
@@ -25,45 +25,59 @@ function NavBar({onNotesClick}) {
                 />
             </Link>
 
-            {/* Main Navbar Links */}
-            <ul className="hidden md:flex items-center">
+            {/* Desktop Navbar */}
+            <ul className="hidden md:flex items-center space-x-10">
                 {links.map(({id, link, name}) => (
                     <li
                         key={id}
-                        className="m-6 cursor-pointer text-gray-500 hover:scale-110 duration-500 text-md"
+                        className="text-gray-500 hover:scale-110 hover:underline duration-300"
                     >
-                        <Link
-                            to={link}
-                            className="text-gray-500 hover:scale-110 duration-500"
-                        >
-                            {name}
-                        </Link>
+                        {name === "Notes" && onNotesClick ? (
+                            <button
+                                onClick={onNotesClick}
+                                className="focus:outline-none"
+                            >
+                                {name}
+                            </button>
+                        ) : (
+                            <Link to={link}>{name}</Link>
+                        )}
                     </li>
                 ))}
-
-                {/* Mobile Menu Toggle */}
-                <div
-                    onClick={() => setNav(!nav)}
-                    className="cursor-pointer pr-6 z-10 text-gray-500 my-4 md:hidden"
-                >
-                    {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
-                </div>
-
-                {/* Mobile Menu */}
-                {nav && (
-                    <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white font-body dark:bg-black dark:text-white">
-                        {links.map(({id, link, name}) => (
-                            <li
-                                key={id}
-                                className="m-6 cursor-pointer hover:scale-110 duration-500 text-xl"
-                                onClick={() => setNav(false)} // Close the menu when a link is clicked
-                            >
-                                <Link to={link}>{name}</Link>
-                            </li>
-                        ))}
-                    </ul>
-                )}
             </ul>
+
+            {/* Mobile Menu Button */}
+            <div
+                onClick={() => setNav(!nav)}
+                className="cursor-pointer z-20 text-gray-500 md:hidden"
+            >
+                {nav ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </div>
+
+            {/* Mobile Menu */}
+            {nav && (
+                <ul className="fixed top-0 left-0 w-full h-screen bg-white dark:bg-black flex flex-col justify-center items-center z-10">
+                    {links.map(({id, link, name}) => (
+                        <li key={id} className="text-xl my-6">
+                            {name === "Notes" && onNotesClick ? (
+                                <button
+                                    onClick={() => {
+                                        onNotesClick();
+                                        setNav(false);
+                                    }}
+                                    className="focus:outline-none"
+                                >
+                                    {name}
+                                </button>
+                            ) : (
+                                <Link to={link} onClick={() => setNav(false)}>
+                                    {name}
+                                </Link>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 }

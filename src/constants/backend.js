@@ -11,7 +11,7 @@ const logo = [
     },
     {
         id: 2,
-        icon: <SiExpress className="inline mr-1 text-black" />,
+        icon: <SiExpress className="inline mr-1 text-black dark:text-white" />,
         nam: "Express.js",
         style: "shadow-black dark:shadow-white",
         url: "https://expressjs.com/",

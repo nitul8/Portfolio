@@ -4,7 +4,7 @@ import {RiTailwindCssFill} from "react-icons/ri";
 const logo = [
     {
         id: 1,
-        icon: <FaHtml5 className="inline mr-1 text-red-400" />,
+        icon: <FaHtml5 className="inline mr-1 text-orange-500" />,
         nam: "HTML",
         style: "shadow-orange-500",
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
