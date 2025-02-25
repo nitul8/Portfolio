@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import pic from "../assets/my_pic.jpeg";
 import flogo from "../constants/frontend";
 import blogo from "../constants/backend";
 import dlogo from "../constants/dsa";
+import experiences from "../constants/experience";
 
 const Home = () => {
+    const [active, setActive] = useState(0);
     return (
         <div className="w-full font-body bg-white dark:bg-black text-[#4b5563] dark:text-[#9ca3af]">
             {/* Home Section */}
@@ -74,8 +76,8 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Experience Section */}
-            <div name="Experience" className="w-full">
+            {/* Technology Section */}
+            <div name="Technology" className="w-full">
                 <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className="pb-4 md:pb-8 pt-4 md:pt-0">
                         <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#d1d5db] dark:border-[#374151] font-heading text-black dark:text-white">
@@ -146,6 +148,59 @@ const Home = () => {
                                     <p className="mt-2 text-center">{nam}</p>
                                 </a>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Experience Section */}
+            <div name="Experience" className="w-full">
+                <div className="max-w-screen-lg mx-auto px-4 py-8">
+                    <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-400 dark:border-gray-700 font-heading text-black dark:text-white">
+                        Experience
+                    </p>
+                    <div className="flex flex-col md:flex-row mt-6">
+                        {/* Sidebar */}
+                        <div className="md:w-1/4 flex flex-col gap-4">
+                            {experiences.map((exp, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setActive(index)}
+                                    className={`py-3 px-4 text-left rounded-lg transition-all duration-300 flex items-center gap-2 ${
+                                        active === index
+                                            ? "bg-gray-700 text-white"
+                                            : "bg-gray-900 text-gray-400 hover:bg-gray-800"
+                                    }`}
+                                >
+                                    {exp.logo && (
+                                        <img
+                                            src={exp.logo}
+                                            alt={exp.company}
+                                            className="w-8 h-8 rounded-full"
+                                        />
+                                    )}
+                                    {exp.company}
+                                </button>
+                            ))}
+                        </div>
+
+                        {/* Experience Details */}
+                        <div className="md:w-3/4 md:pl-8 mt-8 md:mt-0">
+                            <h2 className="text-2xl font-bold text-black dark:text-white">
+                                {experiences[active].role} @{" "}
+                                {experiences[active].company}
+                            </h2>
+                            <p className="text-gray-500 mt-1">
+                                {experiences[active].duration} •{" "}
+                                {experiences[active].location}
+                            </p>
+                            <ul className="mt-4 list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                                {experiences[active].points.map(
+                                    (point, idx) => (
+                                        <li key={idx}>{point}</li>
+                                    )
+                                )}
+                            </ul>
                         </div>
                     </div>
                 </div>

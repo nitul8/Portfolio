@@ -2,7 +2,9 @@ import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlay, faCode} from "@fortawesome/free-solid-svg-icons";
 import {FaReact, FaJs, FaCss3Alt, FaHtml5} from "react-icons/fa";
+import {SiVite} from "react-icons/si";
 import {RiTailwindCssFill} from "react-icons/ri";
+import astitva from "../assets/video/astitva.png";
 import Prtflio from "../assets/video/Prtflio.png";
 import StopWatch from "../assets/video/StopWatch.png";
 import TicTacToe from "../assets/video/TicTacToe2.png";
@@ -10,6 +12,43 @@ import WeatherApp from "../assets/video/WeatherApp.png";
 import FaceBook from "../assets/video/FaceBook.png";
 
 const projects = [
+    {
+        id: 0,
+        title: "Astitva Foundation Website",
+        description:
+            "A website for an NGO to help the underprivileged and needy people.",
+        technologies: [
+            {
+                icon: <FaReact className="inline mr-1 text-blue-400" />,
+                name: "React",
+            },
+            {
+                icon: <SiVite className="inline mr-1 text-yellow-300" />,
+                name: "Vite",
+            },
+            {
+                icon: (
+                    <RiTailwindCssFill className="inline mr-1 text-teal-400" />
+                ),
+                name: "Tailwind CSS",
+            },
+            {
+                icon: <FaJs className="inline mr-1 text-yellow-400" />,
+                name: "JavaScript",
+            },
+            {
+                icon: <FaHtml5 className="inline mr-1 text-red-400" />,
+                name: "HTML5",
+            },
+            {
+                icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
+                name: "CSS3",
+            },
+        ],
+        image: astitva,
+        demoLink: "https://astitvafoundation.vercel.app/",
+        codeLink: "#",
+    },
     {
         id: 1,
         title: "Portfolio",
