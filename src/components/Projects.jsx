@@ -1,10 +1,11 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlay, faCode} from "@fortawesome/free-solid-svg-icons";
-import {FaReact, FaJs, FaCss3Alt, FaHtml5} from "react-icons/fa";
-import {SiVite} from "react-icons/si";
+import {FaReact, FaJs, FaCss3Alt, FaHtml5, FaNodeJs} from "react-icons/fa";
+import {SiVite, SiExpress, SiMongodb} from "react-icons/si";
 import {RiTailwindCssFill} from "react-icons/ri";
 import astitva from "../assets/video/astitva.png";
+import logicchain from "../assets/video/logicchain.png";
 import Prtflio from "../assets/video/Prtflio.png";
 import StopWatch from "../assets/video/StopWatch.png";
 import TicTacToe from "../assets/video/TicTacToe2.png";
@@ -13,7 +14,7 @@ import FaceBook from "../assets/video/FaceBook.png";
 
 const projects = [
     {
-        id: 0,
+        id: 1,
         title: "Astitva Foundation Website",
         description:
             "A website for an NGO to help the underprivileged and needy people.",
@@ -33,8 +34,47 @@ const projects = [
                 name: "Tailwind CSS",
             },
             {
+                icon: <FaNodeJs className="inline mr-1 text-green-600" />,
+                name: "NodeJS",
+            },
+            {
+                icon: (
+                    <SiExpress className="inline mr-1 text-black dark:text-white" />
+                ),
+                name: "ExpressJS",
+            },
+            {
+                icon: <SiMongodb className="inline mr-1 text-green-500" />,
+                name: "MongoDB",
+            },
+            {
                 icon: <FaJs className="inline mr-1 text-yellow-400" />,
                 name: "JavaScript",
+            },
+        ],
+        image: astitva,
+        demoLink: "https://astitvafoundation.vercel.app/",
+        codeLink: "#",
+    },
+    {
+        id: 2,
+        title: "Logic Chain: Daily Quiz App",
+        description:
+            "A webpage where you are served one question and one word daily.",
+        technologies: [
+            {
+                icon: <FaReact className="inline mr-1 text-blue-400" />,
+                name: "React",
+            },
+            {
+                icon: <SiVite className="inline mr-1 text-yellow-300" />,
+                name: "Vite",
+            },
+            {
+                icon: (
+                    <RiTailwindCssFill className="inline mr-1 text-teal-400" />
+                ),
+                name: "Tailwind CSS",
             },
             {
                 icon: <FaHtml5 className="inline mr-1 text-red-400" />,
@@ -44,13 +84,17 @@ const projects = [
                 icon: <FaCss3Alt className="inline mr-1 text-blue-600" />,
                 name: "CSS3",
             },
+            {
+                icon: <FaJs className="inline mr-1 text-yellow-400" />,
+                name: "JavaScript",
+            },
         ],
-        image: astitva,
-        demoLink: "https://astitvafoundation.vercel.app/",
+        image: logicchain,
+        demoLink: "https://logicchain.vercel.app/",
         codeLink: "#",
     },
     {
-        id: 1,
+        id: 3,
         title: "Portfolio",
         description:
             "Personal portfolio showcasing skills, projects, and experience.",
@@ -83,7 +127,7 @@ const projects = [
         codeLink: "https://github.com/nitul8/Portfolio",
     },
     {
-        id: 2,
+        id: 4,
         title: "Stopwatch",
         description:
             "A simple and interactive stopwatch web application to check time.",
@@ -106,7 +150,7 @@ const projects = [
         codeLink: "https://github.com/nitul8/PRODIGY_WD_02",
     },
     {
-        id: 3,
+        id: 5,
         title: "Tic Tac Toe",
         description:
             "Classic Tic Tac Toe game with a clean UI and two-player mode.",
@@ -139,7 +183,7 @@ const projects = [
         codeLink: "https://github.com/nitul8/Tic-Tac-Toe",
     },
     {
-        id: 4,
+        id: 6,
         title: "Weather App",
         description:
             "Displays real-time weather data for various cities using weather API.",
@@ -162,7 +206,7 @@ const projects = [
         codeLink: "https://github.com/nitul8/PRODIGY_WD_05",
     },
     {
-        id: 5,
+        id: 7,
         title: "Facebook Clone",
         description:
             "Clone of Facebook’s main page with basic social features.",
