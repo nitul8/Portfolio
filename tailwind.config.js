@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     darkMode: "class",
     theme: {
         extend: {
-            // You can extend the theme with custom colors if needed
             colors: {
-                // Example of custom colors (you can ignore this if you're using CSS variables)
                 lightBgFrom: "var(--light-bg-from)",
                 lightBgTo: "var(--light-bg-to)",
                 darkBgFrom: "var(--dark-bg-from)",
