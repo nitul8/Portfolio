@@ -92,7 +92,7 @@ const Home = () => {
                             Frontend Technology:
                         </p>
                         <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
-                            {flogo.map(({id, img, icon, nam, style, url}) => (
+                            {flogo.map(({id, icon, nam, style, url}) => (
                                 <a
                                     key={id}
                                     href={url}
